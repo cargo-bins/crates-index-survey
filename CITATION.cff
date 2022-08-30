@@ -1,0 +1,19 @@
+# YAML 1.2
+---
+cff-version: 1.2.0
+message: |
+  If you use this software, please cite it using these metadata.
+
+title: Crates Index Survey
+version: 0.1.0
+date-released: 2022-08-30
+
+repository-code: https://github.com/cargo-bins/crates-index-survey
+license: GPL-3.0
+
+authors:
+  - family-names: Saparelli
+    given-names: Félix
+    orcid: https://orcid.org/0000-0002-2010-630X
+
+references:

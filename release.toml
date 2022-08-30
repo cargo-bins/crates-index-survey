@@ -1,0 +1,20 @@
+pre-release-commit-message = "release: v{{version}}"
+tag-prefix = "v"
+tag-message = "crates-index-survey {{version}}"
+
+# These tools are not published to crates.io
+publish = false
+
+[[pre-release-replacements]]
+file = "CITATION.cff"
+search = "^version: \"?[\\d.]+(-.+)?\"?"
+replace = "version: \"{{version}}\""
+prerelease = true
+max = 1
+
+[[pre-release-replacements]]
+file = "CITATION.cff"
+search = "^date-released: .+"
+replace = "date-released: {{date}}"
+prerelease = true
+max = 1
