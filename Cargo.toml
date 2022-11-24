@@ -10,7 +10,7 @@ edition = "2021"
 license = "GPL-3.0"
 
 [dependencies]
-binstall = { version = "0.1.0", path = "../cargo-binstall/crates/lib" }
+binstalk-downloader = { version = "0.1.0", features = ["zlib-ng", "trust-dns", "zstd-thin"] }
 crates-index = "0.18.9"
 semver = "1.0.13"
 tracing = "0.1.36"
