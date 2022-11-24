@@ -28,7 +28,7 @@ const CHUNK_SIZE: usize = 512;
 #[tokio::main]
 async fn main() -> Result<()> {
 	tracing_subscriber::fmt()
-		.with_env_filter(env::var("RUST_LOG").unwrap_or("info".into()))
+		.with_env_filter(env::var("RUST_LOG").unwrap_or_else(|_| "info".into()))
 		.with_span_events(FmtSpan::NEW | FmtSpan::CLOSE)
 		.init();
 
@@ -57,7 +57,7 @@ async fn main() -> Result<()> {
 async fn get_a_bunch(client: Client, n: usize, total: usize, chunk: &[IndexCrate]) -> Result<()> {
 	let mut set = JoinSet::new();
 
-	for (i, crate_version) in chunk.into_iter().enumerate() {
+	for (i, crate_version) in chunk.iter().enumerate() {
 		set.spawn(
 			crate_version
 				.clone()
