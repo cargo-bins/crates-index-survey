@@ -19,7 +19,7 @@ url = "2.2.2"
 tokio = { version = "1.20.1", features = ["full"] }
 sha2 = "0.10.2"
 cargo_toml = "0.11.5"
-serde_json = "1.0.85"
+serde_json = "1.0.89"
 
 [dependencies.miette]
 version = "5.3.0"
