@@ -14,7 +14,7 @@ binstalk-downloader = { version = "0.1.0", features = ["zlib-ng", "trust-dns", "
 crates-index = "0.18.9"
 semver = "1.0.13"
 tracing = "0.1.36"
-rayon = "1.5.3"
+rayon = "1.6.0"
 url = "2.2.2"
 tokio = { version = "1.20.1", features = ["full"] }
 sha2 = "0.10.2"
