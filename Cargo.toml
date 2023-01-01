@@ -11,7 +11,7 @@ license = "GPL-3.0"
 
 [dependencies]
 binstalk-downloader = { version = "0.1.0", features = ["zlib-ng", "trust-dns", "zstd-thin"] }
-crates-index = "0.18.9"
+crates-index = "0.18.11"
 semver = "1.0.13"
 tracing = "0.1.36"
 rayon = "1.6.1"
