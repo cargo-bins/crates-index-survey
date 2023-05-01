@@ -40,7 +40,7 @@ features = [
 ]
 
 [dependencies.tracing-subscriber]
-version = "0.3.15"
+version = "0.3.17"
 features = [
 	"env-filter",
 	"fmt",
